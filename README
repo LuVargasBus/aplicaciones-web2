@@ -1,0 +1,25 @@
+// verbo o metodo HTTP: GET, POST, PUT, DELETE, PATCH
+
+//los metodos HTTP son un conjunto de verbos que se utilizan para indicar la acción que se desea realizar sobre un recurso en una API RESTful. Cada verbo tiene un propósito específico y se utiliza para interactuar con los recursos de manera adecuada. A continuación, se describen los verbos HTTP más comunes: ES EL COMO
+
+// GET: Obtener datos
+// POST: Crear un nuevo recurso
+// PUT: Actualizar un recurso existente
+// DELETE: Eliminar un recurso
+// PATCH: Actualizar parcialmente un recurso
+
+
+// En el ejemplo de código proporcionado, se utiliza el verbo HTTP GET para definir una ruta en un servidor Express. La ruta '/' responde con un mensaje de "¡Hola, mundo!" cuando se accede a ella. El servidor escucha en el puerto 3000 y muestra un mensaje en la consola indicando que está escuchando en ese puerto.
+
+//Rutas de petición HTTP en Express: DONDE 
+
+// app.get('/ruta', (req, res) => { ... }) - Define una ruta para manejar solicitudes GET.
+// app.post('/ruta', (req, res) => { ... }) - Define una ruta para manejar solicitudes POST.
+// app.put('/ruta', (req, res) => { ... }) - Define una ruta para manejar solicitudes PUT.
+// app.delete('/ruta', (req, res) => { ... }) - Define una ruta para manejar solicitudes DELETE.
+
+
+//CALLBACKS 
+// Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que la función principal ha terminado su tarea. En el contexto de Express, los callbacks se utilizan para manejar las solicitudes HTTP y enviar respuestas al cliente. Por ejemplo, en el código proporcionado, el callback se define dentro de app.get() para manejar las solicitudes GET a la ruta '/' y enviar una respuesta con el mensaje "¡HELLO FROM EXPRESS!".
+
+//REQUEST (REQ) Y RESPONSE (RES)
