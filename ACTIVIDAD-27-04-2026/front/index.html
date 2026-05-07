@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>¡hola mundo !</h1>
+<script>
+   async function obtenerProductos() { 
+    const respuesta = await fetch('https://69ed55aaaf4ff533142bb771.mockapi.io/api/v1/products'); 
+    const productos = await respuesta.json(); 
+    productos.map(producto => {
+        const productoElement = document.createElement('div');
+        productoElement.innerHTML = `
+            <h2>${producto.name}</h2>
+            <p>Precio: ${producto.price}</p>
+            <img src="${producto.image}" alt="${producto.name}" width="100">
+        `;
+        document.body.appendChild(productoElement);
+    });
+    console.log(productos);
+
+}
+obtenerProductos();
+</script>
+</body>
+</html>

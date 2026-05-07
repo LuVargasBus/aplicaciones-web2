@@ -1,0 +1,15 @@
+{
+  "name": "actividad4-23-04-2026",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.mjs"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
